@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cyberspark Solutions | Software & AI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family: "Segoe UI", Arial, sans-serif;
+  background:#0b0f1a;
+  color:#fff;
+  line-height:1.6;
+}
+header{
+  padding:80px 20px;
+  text-align:center;
+  background:linear-gradient(135deg,#0f2027,#203a43);
+}
+header h1{font-size:42px;}
+header p{margin-top:10px;color:#cce;}
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 30px;
+  background:#00f2ff;
+  color:#000;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+section{
+  padding:70px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+h2{text-align:center;margin-bottom:25px;color:#00f2ff;}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.card{
+  background:rgba(255,255,255,0.08);
+  padding:25px;
+  border-radius:15px;
+  text-align:center;
+}
+.card img{
+  width:100%;
+  border-radius:15px;
+  margin-bottom:15px;
+}
+.price{font-size:22px;color:#00f2ff;font-weight:bold;}
+.payments{text-align:center;background:rgba(255,255,255,0.05);border-radius:20px;}
+.payments p{margin:15px 0;}
+footer{background:#05070d;padding:25px;text-align:center;}
+a{color:#00f2ff;text-decoration:none}
+
+/* WhatsApp Button */
+.whatsapp{
+  position:fixed;
+  right:25px;
+  bottom:25px;
+  width:60px;
+  height:60px;
+  background:#25D366;
+  border-radius:50%;
+  color:white;
+  font-size:28px;
+  text-align:center;
+  line-height:60px;
+  text-decoration:none;
+  box-shadow:0 0 15px rgba(0,0,0,.4);
+}
+
+/* Matrix chat styling */
+#matrix-chat h2, #matrix-chat p, #matrix-output, #matrix-input {
+  font-family: "Courier New", monospace;
+  color: #0f0;
+}
+#matrix-output::after {
+  content: "_";
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%,50%,100% {opacity:1;}
+  25%,75% {opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Cyberspark Solutions</h1>
+  <p>Smart Software • Professional Websites • AI Solutions</p>
+  <a href="#contact" class="btn">Get Started</a>
+</header>
+
+<section>
+  <h2>Who We Are</h2>
+  <p style="text-align:center;max-width:800px;margin:auto">
+    Cyberspark Solutions is a modern software brand founded by 
+    <strong>Fortune Njonjo</strong>. We help individuals, schools, and businesses
+    grow digitally through reliable, affordable, and smart technology.
+  </p>
+</section>
+
+<section>
+  <h2>Why Choose Us</h2>
+  <div class="grid">
+    <div class="card">🚀 Fast & Reliable Systems</div>
+    <div class="card">🎯 Affordable Pricing</div>
+    <div class="card">🤖 AI Powered Solutions</div>
+    <div class="card">📱 Mobile Friendly Design</div>
+  </div>
+</section>
+
+<section id="matrix-chat" style="background:#000;color:rgb(3, 147, 184);padding:50px 20px;text-align:center;">
+  <h2 style="color:rgb(6, 143, 185);margin-bottom:20px;">Cyberspark Matrix Chat</h2>
+  <p style="color:rgb(9, 139, 199);max-width:800px;margin:auto;">
+    Type a question about prices or consultation and see your answer in real-time.
+  </p>
+
+  <input id="matrix-input" type="text" placeholder="Type your question..." 
+         style="padding:12px;width:100%;max-width:400px;margin:25px auto;display:block;border-radius:10px;border:none;background:#000;color:rgb(0, 151, 189);outline:none;font-family:monospace;">
+
+  <div id="matrix-output" style="margin-top:20px;font-family:monospace;white-space:pre-line;"></div>
+</section>
+
+<section>
+  <h2>Our Services & Portfolio</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="Creative agency website on devices.png" alt="Website Project 1">
+      <h3>Website Development</h3>
+      <p>Business, personal & portfolio websites</p>
+    </div>
+    <div class="card">
+      <img src="business management.png" alt="School System Project">
+      <h3>School Management Systems</h3>
+      <p>Students, fees, results & dashboards</p>
+    </div>
+    <div class="card">
+      <img src="business systems.png" alt="Business System Project">
+      <h3>Business Systems</h3>
+      <p>Stock, sales & reporting tools</p>
+    </div>
+    <div class="card">
+      <img src="ai chartbot.webp" alt="AI Chatbot Project">
+      <h3>AI Chatbots</h3>
+      <p>Automated customer interaction</p>
+    </div> 
+  </div>
+</section>
+
+<section>
+  <h2>Pricing</h2>
+  <div class="grid">
+    <div class="card"><h3>Basic Website</h3><p class="price">$50 – $80</p></div>
+    <div class="card"><h3>Business Website</h3><p class="price">$100 – $150</p></div>
+    <div class="card"><h3>School System</h3><p class="price">$200+</p></div>
+    <div class="card"><h3>AI Chatbot</h3><p class="price">$50+</p></div>
+  </div>
+</section>
+
+<section class="payments">
+  <h2>Make a Payment</h2>
+  <p>Pay securely using EcoCash, OneMoney, Telecash or Bank Card</p>
+  <a href="https://www.paynow.co.zw/" target="_blank" class="btn">Pay Now</a>
+  <p style="font-size:14px;margin-top:10px">* Replace with official merchant link</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p style="text-align:center">📞 0715942642</p>
+  <p style="text-align:center">📸 Instagram: <a href="https://instagram.com/Tra.pking_17" target="_blank">Tra.pking_17</a></p>
+</section>
+
+<footer>
+  <p>© 2026 Cyberspark Solutions • Built with passion</p>
+</footer>
+
+<a href="https://wa.me/263715942642" target="_blank" class="whatsapp">💬</a>
+
+<script>
+// Smooth fade in animation
+document.querySelectorAll("section").forEach(sec=>{
+  sec.style.opacity=0;
+  sec.style.transform="translateY(40px)";
+  sec.style.transition="0.8s";
+});
+window.addEventListener("scroll",()=>{
+  document.querySelectorAll("section").forEach(sec=>{
+    if(sec.getBoundingClientRect().top<window.innerHeight-100){
+      sec.style.opacity=1;
+      sec.style.transform="translateY(0)";
+    }
+  });
+});
+
+// Matrix chat logic
+const matrixInput = document.getElementById("matrix-input");
+const matrixOutput = document.getElementById("matrix-output");
+
+const matrixResponses = {
+  "basic website": "Basic Website: $50 – $80",
+  "business website": "Business Website: $100 – $150",
+  "school system": "School Management System: $200+",
+  "ai chatbot": "AI Chatbot: $50+",
+  "consultation": "Consultation: Free! Contact via WhatsApp: 0715942642 or Instagram",
+  "price": "Ask about any package and we will provide instant pricing."
+};
+
+matrixInput.addEventListener("keypress", function(e){
+  if(e.key === "Enter"){
+    const q = matrixInput.value.trim().toLowerCase();
+    if(!q) return;
+    const answer = matrixResponses[q] || "Access Denied: Unknown Command!";
+    
+    // Matrix typing effect
+    let i = 0;
+    matrixOutput.textContent = "";
+    const typing = setInterval(()=>{
+      matrixOutput.textContent += answer[i];
+      i++;
+      if(i>=answer.length) clearInterval(typing);
+    },50);
+    
+    matrixInput.value = "";
+  }
+});
+</script>
+
+</body>
+</html>
